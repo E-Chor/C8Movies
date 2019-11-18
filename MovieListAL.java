@@ -16,8 +16,9 @@ public class MovieListAL
      * Constructor for objects of class MovieListsAL
      */
     public MovieListAL(Movie[] movies)
-    {
-
+    {   
+        for( int x=0;x<=pool.size()-1;x++)
+        pool.add(movies[x]);
     }
 
     public ArrayList<Movie> getPool()
