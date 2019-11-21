@@ -28,17 +28,19 @@ public class MovieDriver
         
        Movie[] movieArray = {moana, frozen, bh6, spirit, howel, ponyo, marnie, april, kubo, 
            anastasia, spider};
-        
+       
        
        MovieListAL movieList = new MovieListAL(movieArray);
        
-       ArrayList<Movie> highestRated = movieList.findHighestRatedByStudio();
+       /*ArrayList<Movie> highestRated = movieList.findHighestRatedByStudio();
        for (int i=0 ; i<highestRated.size() ; i++)
            System.out.println(highestRated.get(i));
+       */
+       System.out.println(movieList.getPool());
+       System.out.println(movieList.getByStudio("Disney"));
+       System.out.println(movieList.getHighestrating(movieList.getByStudio("Ghibli")));
+       System.out.println(movieList.findHighestRatedByStudio());
        
-       
-
-        
     }
     
     
